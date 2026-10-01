@@ -1,0 +1,83 @@
+{
+  "organization": "Dankley Universal Cannabis Dispensaries",
+  "domain": "dankley.com",
+  "locations": {
+    "queens": {
+      "id": "queens",
+      "name": "Dankley Queens (Current Alleaves)",
+      "posType": "alleaves",
+      "defaultModel": "gemini-2.5-flash",
+      "judgeModel": "gemini-2.5-flash",
+      "visionModel": "gemini-2.5-flash",
+      "posConfig": {
+        "storeId": "OCM-RETL-XX-XXXXXX-D1"
+      }
+    },
+    "queens_blaze": {
+      "id": "queens_blaze",
+      "name": "Dankley Queens (Blaze Migration Target)",
+      "posType": "blaze",
+      "defaultModel": "gemini-2.5-flash",
+      "judgeModel": "gemini-2.5-flash",
+      "visionModel": "gemini-2.5-flash",
+      "posConfig": {
+        "shopId": "SHOP_QUEENS_BLAZE_01"
+      }
+    },
+    "manhattan_dutchie": {
+      "id": "manhattan_dutchie",
+      "name": "Dankley Manhattan (Dutchie)",
+      "posType": "dutchie",
+      "defaultModel": "gemini-2.5-flash",
+      "judgeModel": "gemini-2.5-flash",
+      "visionModel": "gemini-2.5-flash",
+      "posConfig": {
+        "locationId": "LOC-MANHATTAN-01"
+      }
+    },
+    "sandbox": {
+      "id": "sandbox",
+      "name": "Dankley Universal Sandbox",
+      "posType": "mock",
+      "defaultModel": "gemini-2.5-flash",
+      "judgeModel": "gemini-2.5-flash",
+      "visionModel": "gemini-2.5-flash",
+      "posConfig": {
+        "name": "Local Sandbox Mock POS"
+      }
+    }
+  },
+  "defaultUsers": [
+    {
+      "email": "queens@dankley.com",
+      "name": "Queens Store Manager",
+      "role": "manager",
+      "locationId": "queens"
+    },
+    {
+      "email": "blaze.dev@dankley.com",
+      "name": "Blaze Migration Specialist",
+      "role": "developer",
+      "locationId": "queens_blaze"
+    },
+    {
+      "email": "dutchie@dankley.com",
+      "name": "Dutchie Store Lead",
+      "role": "manager",
+      "locationId": "manhattan_dutchie"
+    },
+    {
+      "email": "developer@dankley.com",
+      "name": "Universal Core Developer",
+      "role": "admin",
+      "locationId": "manhattan_dutchie",
+      "allowedLocations": ["queens", "queens_blaze", "manhattan_dutchie", "sandbox"]
+    },
+    {
+      "email": "intake@dankley.com",
+      "name": "Mobile Intake Operator",
+      "role": "operator",
+      "locationId": "sandbox"
+    }
+  ]
+}

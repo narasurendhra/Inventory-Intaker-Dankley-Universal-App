@@ -1,0 +1,49 @@
+# Node & Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Expo & React Native
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Environment & Secrets (NEVER COMMIT SENSITIVE API KEYS)
+.env
+.env*.local
+.env.*
+!.env.example
+*.pem
+.*_token.json
+*.token.json
+.dutchie_token.json
+.blaze_token.json
+.alleaves_token.json
+network_logs_*.json
+*key.json
+*credentials.json
+service-account*.json
+dankley-ocr-key.json
+
+# Temporary Session Data & OCR Images
+temp_sessions/
+product_raw_images/
+temp_eval/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/

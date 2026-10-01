@@ -1,0 +1,28 @@
+{
+  "name": "inventory-intaker-dankley-universal-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dankley Universal POS-Agnostic Inventory Intake App (Expo Mobile + Next.js Backend with Gemini Vision & Multi-POS Support)",
+  "scripts": {
+    "dashboard:dev": "npm --prefix intake-dashboard run dev",
+    "dashboard:build": "npm --prefix intake-dashboard run build",
+    "dashboard:test": "npm --prefix intake-dashboard test",
+    "mobile:start": "npm --prefix intake-mobile-app start",
+    "mobile:android": "npm --prefix intake-mobile-app run android",
+    "mobile:ios": "npm --prefix intake-mobile-app run ios",
+    "test": "npm --prefix intake-dashboard test"
+  },
+  "keywords": [
+    "dankley",
+    "cannabis",
+    "inventory-intake",
+    "metrc",
+    "dutchie",
+    "alleaves",
+    "gemini",
+    "expo",
+    "nextjs"
+  ],
+  "author": "Dankley Engineering",
+  "license": "MIT"
+}
